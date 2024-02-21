@@ -38,6 +38,9 @@ button {
   &:hover {
     cursor: pointer;
   }
+  &:active{
+    transform: scale(1.08);
+  }
 }
 
 .buttonSection {
@@ -150,13 +153,13 @@ button {
 
 #userHand {
   font-size: 100px;
-  animation: shakeUser 0.5s;
+  animation: shakeUser 1.5s;
   animation-iteration-count: infinite;
 }
 
 #cpuHand {
   font-size: 100px;
-  animation: shakeCpu 0.5s;
+  animation: shakeCpu 1.5s;
   animation-iteration-count: infinite;
 }
 
