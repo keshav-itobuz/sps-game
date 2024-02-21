@@ -158,7 +158,6 @@ button {
   font-size: 100px;
   animation: shakeCpu 0.5s;
   animation-iteration-count: infinite;
-  // transform: rotate(-90deg) ;
 }
 
 #userName {
@@ -166,7 +165,7 @@ button {
 }
 
 @media (min-width: 500px) {
-  
+
   #scores {
     padding: 30px 100px;
   }
