@@ -4,13 +4,27 @@
   box-sizing: border-box;
 }
 
-.container {
+.section {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #003049;
+  color: white;
+}
+
+.container {
+  height: 85vh;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+img {
+  height: 40px;
 }
 
 span {
@@ -19,14 +33,21 @@ span {
 
 button {
   padding: 20px;
+  border-radius: 50%;
+  font-size: 20px;
 }
 button:hover {
   cursor: pointer;
 }
 
+.buttonSection {
+  display: flex;
+  gap: 20px;
+}
+
 #output {
   display: flex;
-  gap: 70px;
+  gap: 60px;
   height: 100px;
 }
 #output img {
@@ -37,4 +58,115 @@ button:hover {
 #scores {
   display: flex;
   gap: 40px;
+  border: 4px white solid;
+  padding: 30px 60px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#cpuName,
+#userName {
+  font-size: 20px;
+  background-color: #fcbf49;
+  padding: 5px;
+  position: absolute;
+}
+
+#cpuName {
+  right: -22px;
+}
+
+@keyframes shakeCpu {
+  0% {
+    transform: rotate(-90deg);
+  }
+  10% {
+    transform: rotate(-95deg);
+  }
+  20% {
+    transform: rotate(-85deg);
+  }
+  30% {
+    transform: rotate(-95deg);
+  }
+  40% {
+    transform: rotate(-85deg);
+  }
+  50% {
+    transform: rotate(-95deg);
+  }
+  60% {
+    transform: rotate(-95deg);
+  }
+  70% {
+    transform: rotate(-95deg);
+  }
+  80% {
+    transform: rotate(-85deg);
+  }
+  90% {
+    transform: rotate(-95deg);
+  }
+  100% {
+    transform: rotate(-95deg);
+  }
+}
+@keyframes shakeUser {
+  0% {
+    transform: rotate(90deg) scaleX(-1);
+  }
+  10% {
+    transform: rotate(85deg) scaleX(-1);
+  }
+  20% {
+    transform: rotate(95deg) scaleX(-1);
+  }
+  30% {
+    transform: rotate(90deg) scaleX(-1);
+  }
+  40% {
+    transform: rotate(95deg) scaleX(-1);
+  }
+  50% {
+    transform: rotate(85deg) scaleX(-1);
+  }
+  60% {
+    transform: rotate(90deg) scaleX(-1);
+  }
+  70% {
+    transform: rotate(85deg) scaleX(-1);
+  }
+  80% {
+    transform: rotate(95deg) scaleX(-1);
+  }
+  90% {
+    transform: rotate(90deg) scaleX(-1);
+  }
+  100% {
+    transform: rotate(85deg) scaleX(-1);
+  }
+}
+#userHand {
+  font-size: 100px;
+  animation: shakeUser 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#cpuHand {
+  font-size: 100px;
+  animation: shakeCpu 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#userName {
+  left: -32px;
+}
+
+@media (min-width: 500px) {
+  #scores {
+    padding: 30px 100px;
+  }
+  .container {
+    width: 500px;
+  }
 }/*# sourceMappingURL=style.css.map */
