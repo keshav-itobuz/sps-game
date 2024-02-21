@@ -81,84 +81,28 @@ button:active {
 
 @keyframes shakeCpu {
   0% {
-    transform: rotate(-90deg);
-  }
-  10% {
-    transform: rotate(-95deg);
-  }
-  20% {
-    transform: rotate(-85deg);
-  }
-  30% {
-    transform: rotate(-95deg);
-  }
-  40% {
-    transform: rotate(-85deg);
-  }
-  50% {
-    transform: rotate(-95deg);
-  }
-  60% {
-    transform: rotate(-95deg);
-  }
-  70% {
-    transform: rotate(-95deg);
-  }
-  80% {
-    transform: rotate(-85deg);
-  }
-  90% {
-    transform: rotate(-95deg);
+    transform: rotateZ(-95deg);
   }
   100% {
-    transform: rotate(-95deg);
+    transform: rotateZ(-85deg);
   }
 }
 @keyframes shakeUser {
   0% {
-    transform: rotate(90deg) scaleX(-1);
-  }
-  10% {
-    transform: rotate(85deg) scaleX(-1);
-  }
-  20% {
-    transform: rotate(95deg) scaleX(-1);
-  }
-  30% {
-    transform: rotate(90deg) scaleX(-1);
-  }
-  40% {
-    transform: rotate(95deg) scaleX(-1);
-  }
-  50% {
-    transform: rotate(85deg) scaleX(-1);
-  }
-  60% {
-    transform: rotate(90deg) scaleX(-1);
-  }
-  70% {
-    transform: rotate(85deg) scaleX(-1);
-  }
-  80% {
-    transform: rotate(95deg) scaleX(-1);
-  }
-  90% {
-    transform: rotate(90deg) scaleX(-1);
+    transform: rotateZ(-85deg) rotateX(180deg);
   }
   100% {
-    transform: rotate(85deg) scaleX(-1);
+    transform: rotateZ(-95deg) rotateX(180deg);
   }
 }
 #userHand {
   font-size: 100px;
-  animation: shakeUser 1.5s;
-  animation-iteration-count: infinite;
+  animation: shakeUser 0.3s infinite linear alternate;
 }
 
 #cpuHand {
   font-size: 100px;
-  animation: shakeCpu 1.5s;
-  animation-iteration-count: infinite;
+  animation: shakeCpu 0.3s infinite linear alternate;
 }
 
 #userName {
