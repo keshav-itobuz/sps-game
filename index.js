@@ -64,6 +64,7 @@ function gameLogic(userInput, programInput) {
     }
 }
 
+(()=>{
 window.addEventListener('click', (e) => {
     if (e.target.id === 'restart') {
         count = 0;
@@ -96,3 +97,4 @@ window.addEventListener('click', (e) => {
         }
     }
 })
+})();
