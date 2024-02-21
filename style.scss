@@ -15,7 +15,7 @@
 }
 
 .container {
-  height: 85vh;
+  height: 95vh;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -72,60 +72,107 @@ button {
   position: absolute;
 }
 
-#cpuName{
+#cpuName {
   right: -22px;
 }
 
-
 @keyframes shakeCpu {
-  0% { transform: rotate(-90deg); }
-  10% { transform:  rotate(-95deg); }
-  20% { transform:  rotate(-85deg); }
-  30% { transform: rotate(-95deg); }
-  40% { transform:  rotate(-85deg); }
-  50% { transform:  rotate(-95deg); }
-  60% { transform:  rotate(-95deg); }
-  70% { transform: rotate(-95deg); }
-  80% { transform:  rotate(-85deg); }
-  90% { transform: rotate(-95deg); }
-  100% { transform:  rotate(-95deg); }
-}
-@keyframes shakeUser {
-  0% { transform: rotate(90deg) scaleX(-1); }
-  10% { transform:  rotate(85deg) scaleX(-1); }
-  20% { transform:  rotate(95deg) scaleX(-1); }
-  30% { transform: rotate(90deg) scaleX(-1); }
-  40% { transform:  rotate(95deg) scaleX(-1); }
-  50% { transform:  rotate(85deg) scaleX(-1); }
-  60% { transform:  rotate(90deg) scaleX(-1); }
-  70% { transform: rotate(85deg) scaleX(-1); }
-  80% { transform:  rotate(95deg) scaleX(-1); }
-  90% { transform: rotate(90deg) scaleX(-1); }
-  100% { transform:  rotate(85deg) scaleX(-1); }
+  0% {
+    transform: rotate(-90deg);
+  }
+  10% {
+    transform: rotate(-95deg);
+  }
+  20% {
+    transform: rotate(-85deg);
+  }
+  30% {
+    transform: rotate(-95deg);
+  }
+  40% {
+    transform: rotate(-85deg);
+  }
+  50% {
+    transform: rotate(-95deg);
+  }
+  60% {
+    transform: rotate(-95deg);
+  }
+  70% {
+    transform: rotate(-95deg);
+  }
+  80% {
+    transform: rotate(-85deg);
+  }
+  90% {
+    transform: rotate(-95deg);
+  }
+  100% {
+    transform: rotate(-95deg);
+  }
 }
 
-#userHand{
+@keyframes shakeUser {
+  0% {
+    transform: rotate(90deg) scaleX(-1);
+  }
+  10% {
+    transform: rotate(85deg) scaleX(-1);
+  }
+  20% {
+    transform: rotate(95deg) scaleX(-1);
+  }
+  30% {
+    transform: rotate(90deg) scaleX(-1);
+  }
+  40% {
+    transform: rotate(95deg) scaleX(-1);
+  }
+  50% {
+    transform: rotate(85deg) scaleX(-1);
+  }
+  60% {
+    transform: rotate(90deg) scaleX(-1);
+  }
+  70% {
+    transform: rotate(85deg) scaleX(-1);
+  }
+  80% {
+    transform: rotate(95deg) scaleX(-1);
+  }
+  90% {
+    transform: rotate(90deg) scaleX(-1);
+  }
+  100% {
+    transform: rotate(85deg) scaleX(-1);
+  }
+}
+
+#userHand {
   font-size: 100px;
   animation: shakeUser 0.5s;
   animation-iteration-count: infinite;
 }
-#cpuHand{
+
+#cpuHand {
   font-size: 100px;
   animation: shakeCpu 0.5s;
   animation-iteration-count: infinite;
   // transform: rotate(-90deg) ;
 }
 
-
-#userName{
+#userName {
   left: -32px;
 }
 
-@media (min-width:500px){
-  #scores{
+@media (min-width: 500px) {
+  
+  #scores {
     padding: 30px 100px;
   }
+
   .container {
     width: 500px;
+    height: 85vh;
   }
 }

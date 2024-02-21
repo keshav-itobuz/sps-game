@@ -15,7 +15,7 @@
 }
 
 .container {
-  height: 85vh;
+  height: 95vh;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -168,5 +168,6 @@ button:hover {
   }
   .container {
     width: 500px;
+    height: 85vh;
   }
 }/*# sourceMappingURL=style.css.map */
